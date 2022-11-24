@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 
 @import url("/style/header.css");
+=======
+/*@import url("/style/header.css");
+>>>>>>> f337b3a4a2cddbcc07f439976b742776aa0bde81
 @import url("/style/main.css");
 @import url("/style/footer.css");
 
@@ -19,6 +23,9 @@ body{
     font-family: 'Lato', sans-serif;
     background-color: #010020;
     height: 100%;
+}*/
+.btn {
+    background-color: rgb(226, 120, 154);
 }
 
 
