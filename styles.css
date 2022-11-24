@@ -1,10 +1,10 @@
-/*
+
 @import url("/style/header.css");
 @import url("/style/main.css");
 @import url("/style/footer.css");
 
 
-*{
+/*{
     display: flex;
 }
 
@@ -22,11 +22,11 @@ body{
 }
 
 
-/* Para movil */
+/* Para movil 
 @media screen and (max-width: 576px){
     /* Lo que debe haber en toda la página, como el color
-    y la fuente, y el padding 0 margin 0 boxsizing */
+    y la fuente, y el padding 0 margin 0 boxsizing 
     a:link, a:visited, a:active {
-        text-decoration:none;   
+        text-decoration:none;  
     }
-}
+}*/
