@@ -12,7 +12,20 @@
         padding: 17px 25px;
         color: var(--back);  
     }
+    
 
+    /*
+    .btn-circle {
+    width: 33px;
+    height: 33px;
+    background: var(--color-white); 
+    border-radius: 50%; 
+    position: absolute;
+    right: 28px;
+    top: 14px;
+    }
+    */
+    
     .circle {
     width: 33px;
     height: 33px;
