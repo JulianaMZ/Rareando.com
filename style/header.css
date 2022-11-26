@@ -3,6 +3,7 @@
 
     *{
         margin: 0;
+        padding: 0;
         box-sizing: border-box ;
     }
 
@@ -10,36 +11,130 @@
         height: 60px;
         background: var(--color-yellow);
         padding: 17px 25px;
-        color: var(--back);  
-    }
-
-    .circle {
-    width: 33px;
-    height: 33px;
-    background: var(--color-white); 
-    border-radius: 50%; 
-    position: absolute;
-    right: 28px;
-    top: 14px;
-    }
-
-    .icon {
-    width: 22px;
-    position: absolute;
-    right: 6px;
-    bottom: 6px;
-    }
-
-    .header-top {
+        color: var(--back); 
         display: flex;
-        justify-content: space-between;
+        justify-content: space-between; 
     }
 
-    .header-logo {
+    /*.container-icon {
+        width: 43px;
+        height: 43px;
+        background: var(--color-white); 
+        border-radius: 50%; 
+        position: absolute;
+        right: 28px;
+        top: 10px;
+    }*/
+
+    .fa-shopping-cart {
+        width: 22px;
+        right: 18px;
+    }
+
+    .h2{
         font-weight: 700;
     }
 
+    .container-icon {
+        position: relative;
+    }
+    .count-products {
+        position: absolute;
+        top: 6%;
+        right: 0;
+    
+        
+        background-color: black;
+        color: white;
+        width: 15px;
+        height: 15px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+    }
+
+    #contador-productos {
+        font-size: 10px;
+    }
+    .container-cart-products {
+       position: absolute;
+       top: 50px;
+       right: 0;
+      
+       background-color: #fff;
+       width: 200px; 
+       z-index: 1;
+
+    }
+    
+    .card-product {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        
+    
+    }
+    .info-cart-product {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid rgb(0, 0, 0, 0.20);
+    }
+    .titulo-product-carrito {
+        font-size: 8px;
+
+    }
+    .precio-product-carrito {
+        font-weight: 700;
+        font-size: 8px;
+    }
+    .cantidad-product-carrito {
+        font-weight: 700;
+        font-size: 8px;
+        margin-left: 10px;
+
+    }
+    .icon-close {
+        width: 15px;
+        height: 15px;
+    
+    }
+
+    .cart-total {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0;
+        gap: 20px;
+       
+        
+
+    }
+    .cart-total h3 {
+        font-size: 15px;
+        font-weight: 700;
+    
+    }
+
+    .total-pagar {
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+    .hidden-cart {
+        display: none;
+
+    }
+
+
+
+
 }
+
+
+
 
  
 
