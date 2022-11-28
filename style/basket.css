@@ -1,11 +1,13 @@
 /*Versión móvil*/
 @media screen and (max-width: 576px) {
 
-
+    html {
+        height: 100%;
+    }
     
     .body-basket {
         
-        height: 100vh;
+        height: 100%;
     }
 
     .basket{
