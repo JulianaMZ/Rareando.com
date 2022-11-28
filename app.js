@@ -75,9 +75,61 @@ function agregarProducto(id){
     console.log(carrito)
 }*/
 
-const btnCart = document.querySelector('.container-icon')
-const containerCartProducts = document.querySelector('.container-cart-products')
+const btnCart = document.querySelector('.container-cart-icon');
+const containerCartProducts = document.querySelector('.container-cart-products');
 
 btnCart.addEventListener('click', () => {
-    containerCartProducts.classList.toggle('hidden-cart')
+    containerCartProducts.classList.toggle('hidden-cart');
+});
+
+const cartInfo = document.querySelector('.cart-product');
+const rowProduct = document.querySelector('.row-product');
+
+const productsList = document.querySelector('.container-items');
+
+let allProducts = [];
+
+
+
+
+
+
+productsList.addEventListener('click', e => {
+
+    if (e.target.classList.contains('btn-warning')) {
+        const product = e.target.parentElement;
+
+        const col = {
+            quantity: 1,
+            title: product.querySelector('card-title').textContent,
+            price: product.querySelector('card-text').textContent,
+        };
+
+        allProducts = [...allProducts, col];
+
+        showHTML();
+    }
+
+
 })
+
+const showHTML = () => {
+
+    rowProduct.innerHTML = '';
+
+    allProducts.forEach(product => {
+        const containerProduct = document.createElement('div');
+        containerProduct.classList.add('cart-product')
+
+        containerProduct.innerHTML = `
+            <div class="info-cart-product">
+                <span class="cantidad-product-carrito">${product.quantity}</span>
+                <p class="titulo-product-carrito">${product.title}</p>
+                <span class="precio-product-carrito">${product.price}</span>
+                <i class="fa fa-close icon-close" style="font-size:15px"></i>
+            </div>
+        `;
+
+        rowProduct.append(containerProduct);
+    });
+};
