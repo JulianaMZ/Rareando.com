@@ -89,6 +89,9 @@ const productsList = document.querySelector('.container-items');
 
 let allProducts = [];
 
+const valorTotal = document.querySelector('.total-pagar')
+
+const countProducts = document.querySelector('#contador-productos')
 
 
 
@@ -105,21 +108,52 @@ productsList.addEventListener('click', e => {
             price: product.querySelector('.card-text').textContent,
         };
 
-        allProducts = [...allProducts, col];
+        const exits = allProducts.some(product => product.title === col.title);
+
+        if (exits){
+            const products = allProducts.map(product => {
+                if(product.title === col.title){
+                    product.quantity++;
+                    return product
+                } else{
+                    return product
+                }
+
+            });
+            allProducts = [...products];
+        } else {
+            allProducts = [...allProducts, col];
+        }
 
         showHTML();
     }
 
 
+});
+
+rowProduct.addEventListener('click', (e) => {
+    if(e.target.classList.contains('icon-close')){
+        const product = e.target.parentElement
+        const title = product.querySelector('p').textContent
+
+        allProducts = allProducts.filter(product => product.title !== title);
+
+        showHTML();
+    }
+    
 })
+
 
 const showHTML = () => {
 
     rowProduct.innerHTML = '';
 
+    let total = 0;
+    let totalOfProducts = 0;
+
     allProducts.forEach(product => {
         const containerProduct = document.createElement('div');
-        containerProduct.classList.add('cart-product')
+        containerProduct.classList.add('cart-product');
 
         containerProduct.innerHTML = `
             <div class="info-cart-product">
@@ -131,5 +165,11 @@ const showHTML = () => {
         `;
 
         rowProduct.append(containerProduct);
+
+        total = total + parseInt(product.quantity * product.price);
+        totalOfProducts = totalOfProducts + product.quantity;
     });
+
+    valorTotal.innerText = `$$(total)`;
+    countProducts.innerText = totalOfProducts;
 };
