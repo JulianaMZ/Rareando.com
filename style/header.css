@@ -8,9 +8,9 @@
     }
 
     .header {
-        height: 60px;
+        height: 3.75rem;
         background: var(--color-yellow);
-        padding: 17px 25px;
+        padding: 1.06rem 1.56rem;
         color: var(--black); 
         display: flex;
         justify-content: space-between; 
@@ -27,8 +27,8 @@
     }*/
 
     .fa-shopping-cart {
-        width: 22px;
-        right: 18px;
+        width: 1.37rem;
+        right: 1.12rem;
     }
 
     .h2{
@@ -47,8 +47,8 @@
         
         background-color: black;
         color: white;
-        width: 15px;
-        height: 15px;
+        width: 0.93rem;
+        height: 0.93rem;
         
 
         display: flex;
@@ -58,15 +58,15 @@
     }
 
     #contador-productos {
-        font-size: 10px;
+        font-size: 0.62rem;
     }
     .container-cart-products {
        position: absolute;
-       top: 50px;
+       top: 3.12rem;
        right: 0;
       
        background-color: #fff;
-       width: 200px; 
+       width: 12.5rem; 
        z-index: 1;
 
     }
@@ -75,32 +75,32 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 10px;
+        padding: 0.62rem;
         
     
     }
     .info-cart-product {
         display: flex;
         justify-content: space-between;
-        border-bottom: 1px solid rgb(0, 0, 0, 0.20);
+        border-bottom: 0.06rem solid rgb(0, 0, 0, 0.20);
     }
     .titulo-product-carrito {
-        font-size: 8px;
+        font-size: 0.5rem;
 
     }
     .precio-product-carrito {
         font-weight: 700;
-        font-size: 8px;
+        font-size: 0.5rem;
     }
     .cantidad-product-carrito {
         font-weight: 700;
-        font-size: 8px;
-        margin-left: 10px;
+        font-size: 0.5rem;
+        margin-left: 0.62rem;
 
     }
     .icon-close {
-        width: 15px;
-        height: 15px;
+        width: 0.93rem;
+        height: 0.93rem;
     
     }
 
@@ -108,20 +108,20 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 10px;
-        gap: 20px;
+        padding: 0.62rem;
+        gap: 1.25rem;
        
         
 
     }
     .cart-total h3 {
-        font-size: 15px;
+        font-size: 0.93rem;
         font-weight: 700;
     
     }
 
     .total-pagar {
-        font-size: 15px;
+        font-size: 0.93rem;
         font-weight: 700;
     }
 
