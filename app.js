@@ -101,8 +101,8 @@ productsList.addEventListener('click', e => {
 
         const col = {
             quantity: 1,
-            title: product.querySelector('card-title').textContent,
-            price: product.querySelector('card-text').textContent,
+            title: product.querySelector('.card-title').textContent,
+            price: product.querySelector('.card-text').textContent,
         };
 
         allProducts = [...allProducts, col];
