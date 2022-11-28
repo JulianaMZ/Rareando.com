@@ -1,0 +1,31 @@
+/*Versión móvil*/
+@media screen and (max-width: 576px) {
+
+
+    
+    .body-basket {
+        
+        height: 100vh;
+    }
+
+    .basket{
+        height: 20rem;
+        width: 100%;
+        background-color: var(--color-background);
+    }
+
+   
+}
+
+
+
+
+
+/*Versión desk*/
+@media screen and (min-width: 576px) {
+
+
+
+
+
+}
