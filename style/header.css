@@ -167,6 +167,37 @@
 /*Versión desk*/
 @media screen and (min-width: 576px) {
 
+    .header {
+        height: 4.75rem;
+        background: var(--color-yellow);
+        padding: 1.06rem 1.56rem;
+        color: var(--black); 
+        display: flex;
+        justify-content: space-between; 
+        
+    }
+
+    h2 {
+        margin-left: 2.9rem;
+    }
+
+
+    .count-products {
+        position: absolute;
+        top: 6%;
+        margin-left: 1.8rem;
+    
+        background-color: var(--color-black);
+        color: var(--color-white);
+        width: 0.93rem;
+        height: 0.93rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+    }
+
 
     /*Escribir aquí*/
 
