@@ -39,18 +39,17 @@
     .container-icon {
         position: relative;
     }
+
     .count-products {
         position: absolute;
         top: 55%;
         left: 130%;
         right: 0;
     
-        
         background-color: var(--color-black);
         color: var(--color-white);
         width: 0.93rem;
         height: 0.93rem;
-        
 
         display: flex;
         justify-content: center;
@@ -61,64 +60,65 @@
     #contador-productos {
         font-size: 0.62rem;
     }
+
     .container-cart-products {
+
        position: absolute;
        top: 3.12rem;
        right: 0;
-      
        background-color: var(--color-white);
        width: 12.5rem; 
        z-index: 1;
-
     }
     
-    .card-product {
-        display: flex;
+    /*Cambiar color arriba*/
+
+
+    .cart-product {
         align-items: center;
         justify-content: space-between;
         padding: 0.62rem;
-        
-    
     }
+
     .info-cart-product {
         display: flex;
         justify-content: space-between;
-        border-bottom: 0.06rem solid rgb(0, 0, 0, 0.20);
+        border-bottom: 0.06rem solid rgb(0, 0, 0, 0.20);   
     }
-    .titulo-product-carrito {
-        font-size: 0.5rem;
 
+    .titulo-product-carrito {
+        font-weight: 700;
+        font-size: 0.75rem;
     }
+
     .precio-product-carrito {
         font-weight: 700;
-        font-size: 0.5rem;
+        font-size: 0.75rem;
     }
+
     .cantidad-product-carrito {
         font-weight: 700;
-        font-size: 0.5rem;
+        font-size: 0.75rem;
         margin-left: 0.62rem;
-
     }
+
     .icon-close {
         width: 0.93rem;
         height: 0.93rem;
-    
     }
 
     .cart-total {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 0.62rem;
         gap: 1.25rem;
-       
-        
-
+        margin-bottom: 0.5rem;
     }
+
     .cart-total h3 {
         font-size: 0.93rem;
         font-weight: 700;
-    
+        margin: 0px;
     }
 
     .total-pagar {
@@ -130,11 +130,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 0.62rem;
+        padding: 0.55rem;
         text-decoration: none;
         background: var(--color-black);
         color: var(--color-white);
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         gap: 1.25rem;
     }
 
@@ -142,13 +142,14 @@
         display: none;
     }
 
-
     .cart-empty {
-        padding: 10px;
+        padding: 1rem;
         text-align: center;
-        font-weight: 10px;
     }
 
+    .cart-empty, p {
+        margin-bottom: -5;
+    }
 }
 
 
