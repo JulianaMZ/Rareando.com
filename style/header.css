@@ -7,6 +7,7 @@
         box-sizing: border-box ;
     }
 
+
     .header {
         height: 3.75rem;
         background: var(--color-yellow);
@@ -45,8 +46,8 @@
         right: 0;
     
         
-        background-color: black;
-        color: white;
+        background-color: var(--color-black);
+        color: var(--color-white);
         width: 0.93rem;
         height: 0.93rem;
         
@@ -65,7 +66,7 @@
        top: 3.12rem;
        right: 0;
       
-       background-color: #fff;
+       background-color: var(--color-white);
        width: 12.5rem; 
        z-index: 1;
 
@@ -125,14 +126,17 @@
         font-weight: 700;
     }
 
+    .btn-tramPedido {
+        padding: 0.62rem;
+        gap: 1.25rem;
+        background: var(--color-black);
+        color: var(--color-white) 
+    }
+
     .hidden-cart {
         display: none;
 
     }
-
-
-
-
 }
 
 
