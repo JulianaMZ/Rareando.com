@@ -89,8 +89,6 @@ const productsList = document.querySelector('.container-items');
 
 let allProducts = [];
 
-let valorUnidad = document.querySelector('.precio-product-carrito');
-
 let valorTotal = document.querySelector('.total-pagar');
 
 let countProducts = document.querySelector('#contador-productos');
@@ -156,7 +154,6 @@ const showHTML = () => {
 
     rowProduct.innerHTML = '';
 
-    let uni = 0;
     let total = 0;
     let totalOfProducts = 0;
 
@@ -175,8 +172,6 @@ const showHTML = () => {
 
         rowProduct.append(containerProduct);
 
-        uni = uni + product.quantity;
-
         total = total + parseInt(product.quantity * product.price);
 
 console.log(parseInt(total))
@@ -186,7 +181,6 @@ console.log(parseInt(total))
         console.log(totalOfProducts)
     });
 
-    valorUnidad.innerText = `${uni}`
     valorTotal.innerText = `${total}`;
     countProducts.innerText = totalOfProducts;
 };
