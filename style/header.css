@@ -125,17 +125,21 @@
         font-size: 0.93rem;
         font-weight: 700;
     }
-
+   
     .btn-tramPedido {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         padding: 0.62rem;
-        gap: 1.25rem;
+        text-decoration: none;
         background: var(--color-black);
-        color: var(--color-white) 
+        color: var(--color-white);
+        font-size: 1.5rem;
+        gap: 1.25rem;
     }
 
     .hidden-cart {
         display: none;
-
     }
 
 
@@ -143,7 +147,6 @@
         padding: 10px;
         text-align: center;
         font-weight: 10px;
-
     }
 
 }
