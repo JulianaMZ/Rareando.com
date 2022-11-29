@@ -89,9 +89,11 @@ const productsList = document.querySelector('.container-items');
 
 let allProducts = [];
 
-const valorTotal = document.querySelector('.total-pagar')
+let valorUnidad = document.querySelector('.precio-product-carrito');
 
-const countProducts = document.querySelector('#contador-productos')
+let valorTotal = document.querySelector('.total-pagar');
+
+let countProducts = document.querySelector('#contador-productos');
 
 
 
@@ -146,8 +148,15 @@ rowProduct.addEventListener('click', (e) => {
 
 const showHTML = () => {
 
+    if(!allProducts.length){
+        containerCartProducts.innerHTML=`
+        <p class"cart-empty">El carrito esta vacio</p>
+        `
+    }
+
     rowProduct.innerHTML = '';
 
+    let uni = 0;
     let total = 0;
     let totalOfProducts = 0;
 
@@ -166,10 +175,18 @@ const showHTML = () => {
 
         rowProduct.append(containerProduct);
 
+        uni = uni + product.quantity;
+
         total = total + parseInt(product.quantity * product.price);
+
+console.log(parseInt(total))
+
         totalOfProducts = totalOfProducts + product.quantity;
+
+        console.log(totalOfProducts)
     });
 
-    valorTotal.innerText = `$$(total)`;
+    valorUnidad.innerText = `${uni}`
+    valorTotal.innerText = `${total}`;
     countProducts.innerText = totalOfProducts;
 };
