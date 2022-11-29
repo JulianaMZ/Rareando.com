@@ -17,16 +17,16 @@
     }
 
 
-    .card {
+    .cart {
         margin-top: 20%;
         background-color: var(--color-background);
         border: none;
     }
 
-    .card, p {
-        margin-top: 10%;
-        font-weight: 700;
-        font-size: 1.5rem;
+    .card, .card-text {
+        margin-top: 5%;
+        background-color: var(--color-background);
+        border: none;
     }
 
     .btn {
@@ -37,14 +37,6 @@
         border: none;
         width: 100%;
     }
-
-
-
-
-
-
-
-
 }
 
 
