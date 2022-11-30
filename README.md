@@ -13,7 +13,7 @@ Special products for...special people.
 ## General Info  :space_invader:
 ***
 E-commerce with simple functionality so that customers can add the most exclusive products to their shopping cart and add or remove items.
- <p>The objective is to make a replica of the design of the landing page proposed by the client with the priority that the user can interact with the drumkit, in such a way that when he clicks on each of the "pads" a different sound is emitted.</p>
+ <p>The objective is to create a virtual shop which can be interacted through mobile phone and computer, being the mobile version funtionallity the main goal.</p>
 
  ***
 
