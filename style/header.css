@@ -7,7 +7,6 @@
         box-sizing: border-box ;
     }
 
-
     .header {
         height: 3.75rem;
         background: var(--color-yellow);
@@ -62,7 +61,6 @@
     }
 
     .container-cart-products {
-
        position: absolute;
        top: 3.12rem;
        right: 0;
@@ -71,14 +69,11 @@
        z-index: 1;
     }
 
-
     .cart-product {
         width: 100%;
         align-items: center;
         justify-content: space-between;
         padding: 0.62rem;
-        
-        
     }
 
     .info-cart-product {
@@ -185,8 +180,8 @@
 
     .count-products {
         position: absolute;
-        top: 6%;
-        margin-left: 1.8rem;
+        top: 85%;
+        margin-left: 2rem;
     
         background-color: var(--color-black);
         color: var(--color-white);
@@ -203,5 +198,104 @@
 
     /*Escribir aquí*/
 
+    .fa-shopping-cart {
+        width: 1.37rem;
+        right: 1.12rem;
+    }
 
+    .container-icon {
+        position: relative;
+        margin: 1% 4%;
+    }
+
+    #product-counter {
+        font-size: 0.62rem;
+    }
+
+    .container-cart-products {
+       position: absolute;
+       top: 3.12rem;
+       right: 0;
+       background-color: var(--color-white);
+       width: 17rem; 
+       z-index: 1;
+    }
+
+    .cart-product {
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.62rem;
+    }
+
+    .info-cart-product {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 0.06rem solid rgb(0, 0, 0, 0.20);   
+    }
+
+    .product-cart-title {
+        font-weight: 700;
+        font-size: 0.75rem;
+    }
+
+    .product-cart-price {
+        font-weight: 700;
+        font-size: 0.75rem;
+    }
+
+    .quantity-product-cart {
+        font-weight: 700;
+        font-size: 0.75rem;
+        margin-left: 0.62rem;
+    }
+
+    .icon-close {
+        width: 0.93rem;
+        height: 0.93rem;
+    }
+
+    .cart-total {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.25rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .cart-total h3 {
+        font-size: 0.93rem;
+        font-weight: 700;
+        margin: 0px;
+    }
+
+    .total-pay {
+        font-size: 0.93rem;
+        font-weight: 700;
+    }
+   
+    .btn-go-to-cart {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.55rem;
+        text-decoration: none;
+        background: var(--color-black);
+        color: var(--color-white);
+        font-size: 1.3rem;
+        gap: 1.25rem;
+    }
+
+    .hidden-cart {
+        display: none;
+    }
+
+    .cart-empty {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .cart-empty, p {
+        margin-bottom: -5;
+    }
 }
