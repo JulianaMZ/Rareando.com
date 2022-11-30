@@ -93,6 +93,16 @@ let valorTotal = document.querySelector('.total-pay');
 
 let countProducts = document.querySelector('#product-counter');
 
+/*const processOrder = document.getElementById('.btn-go-to-cart');
+
+
+
+processOrder.addEventListener('click', e => {
+    product.btnGotoCart(e)
+        e.prevenDefault();
+        location.href = 'basket.html';
+
+});*/
 
 
 
@@ -141,7 +151,8 @@ rowProduct.addEventListener('click', (e) => {
         showHTML();
     }
     
-})
+});
+
 
 
 const showHTML = () => {
@@ -183,4 +194,5 @@ console.log(parseInt(total))
 
     valorTotal.innerText = `${total}`;
     countProducts.innerText = totalOfProducts;
+
 };
