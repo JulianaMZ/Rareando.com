@@ -3,10 +3,11 @@
 Special products for...special people.
 
 ## Table of Contents :technologist:
-1. [General Info](##general-info)
+1. [General Info](#general-info)
 2. [Technologies](#technologies)
-3. [Installation](#installation)
-4. [Authors](#authors)
+3. [Tools](#tools)
+4. [Installation](#installation)
+5. [Authors](#authors)
 
 
 
@@ -19,26 +20,25 @@ E-commerce with simple functionality so that customers can add the most exclusiv
 
  <i>Project in development process.<i>
 
+ 
 ### Screenshot :iphone:
 ![Image text](/assets/images/hitthedombo-mobile.jpg/)
 ![Image text](/assets/images/hitthedombo.jpg)
 
+ 
 ## Technologies :computer:
 ***
  * [HTML5](https://openwebinars.net/blog/que-es-html5/)
  * [CSS3](https://openwebinars.net/blog/que-es-css3/)
  * [JavaScript](https://www.javascript.com/)
- * [Visual Code]
- * [GitHub]
- 
-
-## Methodologies :computer:
  
  
 ## Tools :computer:
-  *Trello
-  *Figma
-  *
+  *[Trello] (https://trello.com/)
+  *[Figma] (https://www.figma.com/)
+  *[Visual Studio Code] (https://code.visualstudio.com/)
+  *[Git/GitHub] (https://github.com/)
+ 
  
 ## Installation :hammer_and_wrench:
 ***
