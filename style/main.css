@@ -55,22 +55,36 @@
         
     }
 
+    .col {
+        margin-top: 0;
+    }
+
     .card {
         width: 15rem;
         height: 25rem;
+        margin-top: 2rem;
+        background-color: var(--color-background);
     }
     
 
     .card img {
-       
+        padding: 0.8rem;
         height: 16rem;
         object-fit: cover;
     }
 
     .btn {
         display: flex;
-        align-items: center;
-        justify-items: center;
+        text-align: center;
+        align-content: center;
+        justify-content: center;
+        width: 100%;
+        border: none;
+        background-color: var(--color-yellow);
+    }
+
+    h5, p {
+        margin-left: 0.5rem;
     }
 
    
