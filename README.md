@@ -29,11 +29,11 @@ E-commerce with simple functionality so that customers can add the most exclusiv
  * [CSS3](https://openwebinars.net/blog/que-es-css3/)
  * [JavaScript](https://www.javascript.com/)
 
-## Installation :bulb:
+## Installation :hammer_and_wrench:
 ***
 ```
 $ Open your Visual code and a wew terminal
-$ git clone https://github.com/magswer/CleanSound.git
+$ git clone https://github.com/JulianaMZ/Rareando.com
 $ npm install
 $ npm start
 ```
