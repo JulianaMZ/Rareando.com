@@ -57,7 +57,7 @@
         border-radius: 50%;
     }
 
-    #contador-productos {
+    #product-counter {
         font-size: 0.62rem;
     }
 
@@ -86,17 +86,17 @@
         border-bottom: 0.06rem solid rgb(0, 0, 0, 0.20);   
     }
 
-    .titulo-product-carrito {
+    .product-cart-title {
         font-weight: 700;
         font-size: 0.75rem;
     }
 
-    .precio-product-carrito {
+    .product-cart-price {
         font-weight: 700;
         font-size: 0.75rem;
     }
 
-    .cantidad-product-carrito {
+    .quantity-product-cart {
         font-weight: 700;
         font-size: 0.75rem;
         margin-left: 0.62rem;
@@ -121,12 +121,12 @@
         margin: 0px;
     }
 
-    .total-pagar {
+    .total-pay {
         font-size: 0.93rem;
         font-weight: 700;
     }
    
-    .btn-tramPedido {
+    .btn-go-to-cart {
         display: flex;
         justify-content: center;
         align-items: center;

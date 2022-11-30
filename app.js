@@ -89,9 +89,9 @@ const productsList = document.querySelector('.container-items');
 
 let allProducts = [];
 
-let valorTotal = document.querySelector('.total-pagar');
+let valorTotal = document.querySelector('.total-pay');
 
-let countProducts = document.querySelector('#contador-productos');
+let countProducts = document.querySelector('#product-counter');
 
 
 
@@ -163,9 +163,9 @@ const showHTML = () => {
 
         containerProduct.innerHTML = `
             <div class="info-cart-product">
-                <span class="cantidad-product-carrito">${product.quantity}</span>
-                <p class="titulo-product-carrito">${product.title}</p>
-                <span class="precio-product-carrito">${product.price}</span>
+                <span class="quantity-product-cart">${product.quantity}</span>
+                <p class="product-cart-title">${product.title}</p>
+                <span class="product-cart-price">${product.price}</span>
                 <i class="fa fa-close icon-close" style="font-size:15px"></i>
             </div>
         `;

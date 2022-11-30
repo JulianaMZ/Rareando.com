@@ -38,11 +38,11 @@
         font-weight: 500;
         padding:5% 0% 5% 20%;
     }
-    .button-pedido{
+    .button-order{
         display: flex;
         justify-content: center;
     }
-    .btn-tramitarPedido{
+    .btn-go-to-cart{
       margin-bottom: 5%;
       width: 50%;
       border-radius:50px;
