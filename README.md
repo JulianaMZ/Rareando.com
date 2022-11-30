@@ -22,9 +22,9 @@ E-commerce with simple functionality so that customers can add the most exclusiv
 
  
 ### Images :iphone:
-![Image text](/images/hitthedombo-mobile.jpg/)
+![Image text](/images/README-shop.jpg.jpg)
 ![Image text](/images/README-cart.icon.jpg)
-![Image text](/images/Shop.opened.jpg)
+![Image text](images/README-cart.jpg)
 
  
 ## Technologies :computer:
