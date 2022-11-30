@@ -1,6 +1,6 @@
 # Rareando.com
 
-Productos... especiales para personas... especiales.
+Special products for...special people.
 
 ## Table of Contents :technologist:
 1. [General Info](#general-info)
@@ -10,9 +10,9 @@ Productos... especiales para personas... especiales.
 
 
 
-## General Info  :musical_keyboard:
+## General Info  :space_invader:
 ***
- Landing page development for a musical instrument company that plans to sell its flagship product: an electronic drum kit. 
+E-commerce with simple functionality so that customers can add the most exclusive products to their shopping cart and add or remove items.
  <p>The objective is to make a replica of the design of the landing page proposed by the client with the priority that the user can interact with the drumkit, in such a way that when he clicks on each of the "pads" a different sound is emitted.</p>
 
  ***
