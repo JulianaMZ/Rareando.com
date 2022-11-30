@@ -3,7 +3,7 @@
 Special products for...special people.
 
 ## Table of Contents :technologist:
-1. [General Info](#general-info)
+1. [General Info](##general-info)
 2. [Technologies](#technologies)
 3. [Installation](#installation)
 4. [Authors](#authors)
@@ -28,7 +28,18 @@ E-commerce with simple functionality so that customers can add the most exclusiv
  * [HTML5](https://openwebinars.net/blog/que-es-html5/)
  * [CSS3](https://openwebinars.net/blog/que-es-css3/)
  * [JavaScript](https://www.javascript.com/)
+ * [Visual Code]
+ * [GitHub]
+ 
 
+## Methodologies :computer:
+ 
+ 
+## Tools :computer:
+  *Trello
+  *Figma
+  *
+ 
 ## Installation :hammer_and_wrench:
 ***
 ```
