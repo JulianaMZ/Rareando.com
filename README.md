@@ -21,9 +21,10 @@ E-commerce with simple functionality so that customers can add the most exclusiv
  <i>Project in development process.<i>
 
  
-### Screenshot :iphone:
-![Image text](/assets/images/hitthedombo-mobile.jpg/)
-![Image text](/assets/images/hitthedombo.jpg)
+### Images :iphone:
+![Image text](/images/hitthedombo-mobile.jpg/)
+![Image text](/images/README-cart.icon.jpg)
+![Image text](/images/Shop.opened.jpg)
 
  
 ## Technologies :computer:
