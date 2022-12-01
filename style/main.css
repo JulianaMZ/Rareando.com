@@ -52,7 +52,10 @@
         display: grid;
         grid-gap: 1.25rem;
         grid-template-columns: repeat(3, 1fr);
-        
+    }
+
+    .row::after, .row::before { 
+        display:none;
     }
 
     .col {
@@ -86,11 +89,4 @@
     h5, p {
         margin-left: 0.5rem;
     }
-
-   
-
-
-    
-
-
 }
