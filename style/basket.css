@@ -1,0 +1,123 @@
+/*Versión móvil*/
+@media screen and (max-width: 576px) {
+
+    html {
+        height: 100%;
+    }
+    
+    .body-basket {
+        
+        height: 100%;
+    }
+
+    .basket{
+        height: 20rem;
+        width: 100%;
+        background-color: var(--color-background);
+    }
+    .main-basket{
+        margin: 5% ;
+    }
+    .basket-resumen{
+        background-color: var(--color-background);
+        margin-top: 5%;
+    }
+    .resumen{
+        font-size: 2rem;
+        font-weight: 500;
+        padding: 5% 0%;
+    }
+    .resumen-list{
+        font-size: 1.1rem;
+        font-weight: 500;
+        list-style: none;
+        margin-bottom: 10%
+
+    }
+    .total{
+        font-size: 2rem;
+        font-weight: 500;
+        padding:5% 0% 5% 20%;
+    }
+    .button-order{
+        display: flex;
+        justify-content: center;
+    }
+    .btn-go-to-cart-bkt{
+      margin-bottom: 5%;
+      width: 50%;
+      border-radius:50px;
+      background-color: var(--color-yellow);
+      font-size: 1.5rem;
+      font-weight: 500;
+      border: none;
+    }
+
+   
+}
+
+
+
+
+
+/*Versión desk*/
+@media screen and (min-width: 576px) {
+
+
+    html {
+        height: 100%;
+    }
+    
+    .body-basket {
+        
+        height: 100%;
+    }
+
+    .basket{
+        height: 20rem;
+        width: 100%;
+        background-color: var(--color-background);
+    }
+
+    .main-basket{
+        margin: 5% ;
+    }
+
+    .basket-resumen{
+        background-color: var(--color-background);
+        margin-top: 5%;   
+    }
+    .resumen{
+        font-size: 2rem;
+        font-weight: 500;
+        padding: 5% 0%;
+    }
+
+    .resumen-list{
+        font-size: 1.1rem;
+        font-weight: 500;
+        list-style: none;
+
+    }
+
+    .total{
+        font-size: 2rem;
+        font-weight: 500;
+        padding:5% 0% 5% 20%;
+    }
+
+    .button-order{
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn-go-to-cart-bkt{
+      margin-bottom: 5%;
+      width: 50%;
+      border-radius:50px;
+      background-color: var(--color-yellow);
+      font-size: 1.5rem;
+      font-weight: 500;
+      border: none;
+    }
+}

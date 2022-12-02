@@ -89,7 +89,20 @@ const productsList = document.querySelector('.container-items');
 
 let allProducts = [];
 
+let valorTotal = document.querySelector('.total-pay');
 
+let countProducts = document.querySelector('#product-counter');
+
+/*const processOrder = document.getElementById('.btn-go-to-cart');
+
+
+
+processOrder.addEventListener('click', e => {
+    product.btnGotoCart(e)
+        e.prevenDefault();
+        location.href = 'basket.html';
+
+});*/
 
 
 
@@ -105,31 +118,81 @@ productsList.addEventListener('click', e => {
             price: product.querySelector('.card-text').textContent,
         };
 
-        allProducts = [...allProducts, col];
+        const exits = allProducts.some(product => product.title === col.title);
+
+        if (exits){
+            const products = allProducts.map(product => {
+                if(product.title === col.title){
+                    product.quantity++;
+                    return product
+                } else{
+                    return product
+                }
+
+            });
+            allProducts = [...products];
+        } else {
+            allProducts = [...allProducts, col];
+        }
 
         showHTML();
     }
 
 
-})
+});
+
+rowProduct.addEventListener('click', (e) => {
+    if(e.target.classList.contains('icon-close')){
+        const product = e.target.parentElement;
+        const title = product.querySelector('p').textContent
+
+        allProducts = allProducts.filter(product => product.title !== title);
+
+        showHTML();
+    }
+    
+});
+
+
 
 const showHTML = () => {
 
+    if(!allProducts.length){
+        containerCartProducts.innerHTML=`
+        <p class"cart-empty" id="cart-empty">El carrito esta vacio</p>
+        `
+    }
+
     rowProduct.innerHTML = '';
+
+    let total = 0;
+    let totalOfProducts = 0;
 
     allProducts.forEach(product => {
         const containerProduct = document.createElement('div');
-        containerProduct.classList.add('cart-product')
+        containerProduct.classList.add('cart-product');
 
         containerProduct.innerHTML = `
             <div class="info-cart-product">
-                <span class="cantidad-product-carrito">${product.quantity}</span>
-                <p class="titulo-product-carrito">${product.title}</p>
-                <span class="precio-product-carrito">${product.price}</span>
+                <span class="quantity-product-cart">${product.quantity}</span>
+                <p class="product-cart-title">${product.title}</p>
+                <span class="product-cart-price">${product.price}</span>
                 <i class="fa fa-close icon-close" style="font-size:15px"></i>
             </div>
         `;
 
         rowProduct.append(containerProduct);
+
+        total = total + parseInt(product.quantity * product.price);
+
+console.log(parseInt(total))
+
+        totalOfProducts = totalOfProducts + product.quantity;
+
+        console.log(totalOfProducts)
     });
+
+    valorTotal.innerText = `${total}`;
+    countProducts.innerText = totalOfProducts;
+
 };

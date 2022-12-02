@@ -17,16 +17,16 @@
     }
 
 
-    .card {
+    .cart {
         margin-top: 20%;
         background-color: var(--color-background);
         border: none;
     }
 
-    .card, p {
-        margin-top: 10%;
-        font-weight: 700;
-        font-size: 1.5rem;
+    .card, .card-text {
+        margin-top: 5%;
+        background-color: var(--color-background);
+        border: none;
     }
 
     .btn {
@@ -37,14 +37,6 @@
         border: none;
         width: 100%;
     }
-
-
-
-git 
-
-
-
-
 }
 
 
@@ -53,17 +45,49 @@ git
 
 /*Versión desk*/
 @media screen and (min-width: 576px) {
-    .col {
+
+    .row {
+        margin: 1.25rem auto;
+        width: 90%;
         display: grid;
+        grid-gap: 1.25rem;
         grid-template-columns: repeat(3, 1fr);
-        gap: 1.25rem;
+        
     }
 
+    .col {
+        margin-top: 0;
+    }
+
+    .card {
+        width: 15rem;
+        height: 25rem;
+        margin-top: 2rem;
+        background-color: var(--color-background);
+    }
+    
+
     .card img {
-        width: 100%;
-        height: 12.5rem;
+        padding: 0.8rem;
+        height: 16rem;
         object-fit: cover;
     }
+
+    .btn {
+        display: flex;
+        text-align: center;
+        align-content: center;
+        justify-content: center;
+        width: 100%;
+        border: none;
+        background-color: var(--color-yellow);
+    }
+
+    h5, p {
+        margin-left: 0.5rem;
+    }
+
+   
 
 
     
