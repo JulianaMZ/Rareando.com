@@ -45,7 +45,11 @@
 
 /*Versión desk*/
 @media screen and (min-width: 576px) {
+    .container-items {
+        display:flex ;
+        justify-content: center;
 
+    }
     .row {
         justify-items: center;
         width: 90%;
