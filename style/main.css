@@ -47,9 +47,10 @@
 @media screen and (min-width: 576px) {
 
     .row {
-        margin: 1.25rem auto;
+        justify-items: center;
         width: 90%;
         display: grid;
+        margin-top: 2%;
         grid-gap: 1.25rem;
         grid-template-columns: repeat(3, 1fr);
         
@@ -86,11 +87,4 @@
     h5, p {
         margin-left: 0.5rem;
     }
-
-   
-
-
-    
-
-
 }
