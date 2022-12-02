@@ -140,7 +140,7 @@
 
     .cart-empty {
         padding: 1rem;
-        text-align: center;
+        text-align: right;
     }
 
     .cart-empty, p {
@@ -177,7 +177,6 @@
         margin-left: 2.9rem;
     }
 
-
     .count-products {
         position: absolute;
         top: 85%;
@@ -193,10 +192,6 @@
         align-items: center;
         border-radius: 50%;
     }
-
-    
-
-    /*Escribir aquí*/
 
     .fa-shopping-cart {
         width: 1.37rem;
@@ -291,11 +286,8 @@
     }
 
     .cart-empty {
-        padding: 1rem;
-        text-align: center;
-    }
-
-    .cart-empty, p {
-        margin-bottom: -5;
+        padding: 0.2rem;
+        text-align: right;
+        margin-top: 0.1rem;
     }
 }
