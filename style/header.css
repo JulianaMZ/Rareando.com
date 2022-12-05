@@ -18,10 +18,11 @@
 
     .fa-shopping-cart {
         width: 1.37rem;
-        right: 1.12rem;
+        margin-right: 1.12rem;
     }
 
-    .h2{
+    h2{
+        margin: 0;
         font-weight: 700;
     }
 
@@ -31,14 +32,14 @@
 
     .count-products {
         position: absolute;
-        top: 55%;
-        left: 130%;
+        top: 50%;
+        left: 124%;
         right: 0;
     
         background-color: var(--color-black);
         color: var(--color-white);
-        width: 0.93rem;
-        height: 0.93rem;
+        width: 0.99rem;
+        height: 0.99rem;
 
         display: flex;
         justify-content: center;
@@ -86,6 +87,9 @@
         font-weight: 700;
         font-size: 0.75rem;
         margin-left: 0.62rem;
+    }
+    .glyphicon {
+        height: 0.8rem;
     }
 
     .icon-close {
@@ -153,17 +157,20 @@
 
 @media screen and (min-width: 576px) {
 
-    .header {
-        height: 4.75rem;
+    header {
+        height: 6.75rem;
         background: var(--color-yellow);
         padding: 1.06rem 1.56rem;
         color: var(--black); 
         display: flex;
+        align-items: center;
         justify-content: space-between; 
+    
         
     }
 
     h2 {
+        margin-top: 1rem;
         margin-left: 2.9rem;
     }
 
@@ -171,6 +178,7 @@
         position: absolute;
         top: 85%;
         margin-left: 2rem;
+
     
         background-color: var(--color-black);
         color: var(--color-white);
@@ -182,6 +190,7 @@
         align-items: center;
         border-radius: 50%;
     }
+
 
     .fa-shopping-cart {
         width: 1.37rem;
@@ -240,6 +249,7 @@
         height: 0.93rem;
     }
 
+
     .cart-total {
         display: flex;
         justify-content: center;
@@ -254,6 +264,7 @@
         margin: 0px;
     }
 
+ 
     .total-pay {
         font-size: 0.93rem;
         font-weight: 700;

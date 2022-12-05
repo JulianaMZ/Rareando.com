@@ -60,7 +60,14 @@
         margin-top: 2%;
         grid-gap: 1.25rem;
         grid-template-columns: repeat(3, 1fr);
-        
+    }
+
+    .row::after, .row::before { 
+        display:none;
+    }
+
+    .col {
+        margin-top: 0;
     }
 
     .col {

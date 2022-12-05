@@ -93,6 +93,9 @@ let valorTotal = document.querySelector('.total-pay');
 
 let countProducts = document.querySelector('#product-counter');
 
+
+let minusPlus = document.querySelector('.glyphicon')
+
 /*const processOrder = document.getElementById('.btn-go-to-cart');
 
 
@@ -114,7 +117,9 @@ productsList.addEventListener('click', e => {
 
         const col = {
             quantity: 1,
+            minus: product.querySelector('.glyphicon-minus'),
             title: product.querySelector('.card-title').textContent,
+            plus: product.querySelector('glyphicon-plus'),
             price: product.querySelector('.card-text').textContent,
         };
 
@@ -165,6 +170,7 @@ const showHTML = () => {
 
     rowProduct.innerHTML = '';
 
+    let productMinusplus = 0;
     let total = 0;
     let totalOfProducts = 0;
 
@@ -175,7 +181,9 @@ const showHTML = () => {
         containerProduct.innerHTML = `
             <div class="info-cart-product">
                 <span class="quantity-product-cart">${product.quantity}</span>
+                <p><span class="glyphicon glyphicon-minus">${product.minus}</span></p> 
                 <p class="product-cart-title">${product.title}</p>
+                <p><span class="glyphicon glyphicon-plus">${product.plus}</span></p>
                 <span class="product-cart-price">${product.price}</span>
                 <i class="fa fa-close icon-close" style="font-size:15px"></i>
             </div>
@@ -183,15 +191,14 @@ const showHTML = () => {
 
         rowProduct.append(containerProduct);
 
+        productMinusplus = productMinusplus + parseInt(product.quantity - product.minus);
+
         total = total + parseInt(product.quantity * product.price);
-
-console.log(parseInt(total))
-
         totalOfProducts = totalOfProducts + product.quantity;
 
-        console.log(totalOfProducts)
     });
 
+    minusPlus.innerText = productMinusplus
     valorTotal.innerText = `${total}`;
     countProducts.innerText = totalOfProducts;
 
