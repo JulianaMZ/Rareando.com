@@ -159,7 +159,7 @@ const showHTML = () => {
 
     if(!allProducts.length){
         containerCartProducts.innerHTML=`
-        <p class"cart-empty" id="cart-empty">El carrito esta vacio</p>
+        <p class= "cart-empty" id="cart-empty">El carrito esta vacio</p>
         `
     }
 
