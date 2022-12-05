@@ -1,11 +1,7 @@
 
 
-/*Versión móvil*/
+
 @media screen and (max-width: 576px) {
-
-
-    /*Escribir aquí*/
-
 
     .row {
         margin: 5%;
@@ -43,13 +39,25 @@
 
 
 
-/*Versión desk*/
-@media screen and (min-width: 576px) {
 
+
+
+
+
+
+
+
+@media screen and (min-width: 576px) {
+    .container-items {
+        display:flex ;
+        justify-content: center;
+
+    }
     .row {
-        margin: 1.25rem auto;
+        justify-items: center;
         width: 90%;
         display: grid;
+        margin-top: 2%;
         grid-gap: 1.25rem;
         grid-template-columns: repeat(3, 1fr);
     }
@@ -60,6 +68,13 @@
 
     .col {
         margin-top: 0;
+    }
+
+    .col {
+        margin-top: 0;
+        display: flex;
+        justify-content: center;
+        width: 100%;
     }
 
     .card {

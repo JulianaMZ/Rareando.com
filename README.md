@@ -39,6 +39,9 @@ E-commerce with simple functionality so that customers can add the most exclusiv
   *[Figma] (https://www.figma.com/)
   *[Visual Studio Code] (https://code.visualstudio.com/)
   *[Git/GitHub] (https://github.com/)
+  *[BootStrap]
+  *[Toastr]
+
  
  
 ## Installation :hammer_and_wrench:

@@ -7,8 +7,8 @@
         box-sizing: border-box ;
     }
 
-    header {
-        height: 5.75rem;
+    .header {
+        height: 3.75rem;
         background: var(--color-yellow);
         padding: 1.06rem 1.56rem;
         color: var(--black); 
@@ -16,19 +16,9 @@
         justify-content: space-between; 
     }
 
-    /*.container-icon {
-        width: 43px;
-        height: 43px;
-        background: var(--color-white); 
-        border-radius: 50%; 
-        position: absolute;
-        right: 28px;
-        top: 10px;
-    }*/
-
     .fa-shopping-cart {
         width: 1.37rem;
-        margin-right: 0.8rem;
+        margin-right: 1.12rem;
     }
 
     h2{
@@ -66,7 +56,7 @@
        top: 3.12rem;
        right: 0;
        background-color: var(--color-white);
-       width: 17rem; 
+       width: 21.5rem; 
        z-index: 1;
     }
 
@@ -144,7 +134,7 @@
 
     .cart-empty {
         padding: 1rem;
-        text-align: center;
+        text-align: right;
     }
 
     .cart-empty, p {
@@ -164,7 +154,7 @@
 
 
 
-/*Versión desk*/
+
 @media screen and (min-width: 576px) {
 
     header {
@@ -184,11 +174,11 @@
         margin-left: 2.9rem;
     }
 
-
     .count-products {
         position: absolute;
-        top: 65%;
-        margin-left: 2.7rem;
+        top: 85%;
+        margin-left: 2rem;
+
     
         background-color: var(--color-black);
         color: var(--color-white);
@@ -201,12 +191,8 @@
         border-radius: 50%;
     }
 
-    
-
-    /*Escribir aquí*/
 
     .fa-shopping-cart {
-       
         width: 1.37rem;
         right: 1.12rem;
     }
@@ -263,6 +249,7 @@
         height: 0.93rem;
     }
 
+
     .cart-total {
         display: flex;
         justify-content: center;
@@ -277,6 +264,7 @@
         margin: 0px;
     }
 
+ 
     .total-pay {
         font-size: 0.93rem;
         font-weight: 700;
@@ -299,11 +287,8 @@
     }
 
     .cart-empty {
-        padding: 1rem;
-        text-align: center;
-    }
-
-    .cart-empty, p {
-        margin-bottom: -5;
+        padding: 0.2rem;
+        text-align: right;
+        margin-top: 0.1rem;
     }
 }

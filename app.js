@@ -93,8 +93,19 @@ let valorTotal = document.querySelector('.total-pay');
 
 let countProducts = document.querySelector('#product-counter');
 
+
 let minusPlus = document.querySelector('.glyphicon')
 
+/*const processOrder = document.getElementById('.btn-go-to-cart');
+
+
+
+processOrder.addEventListener('click', e => {
+    product.btnGotoCart(e)
+        e.prevenDefault();
+        location.href = 'basket.html';
+
+});*/
 
 
 
@@ -148,11 +159,12 @@ rowProduct.addEventListener('click', (e) => {
 });
 
 
+
 const showHTML = () => {
 
     if(!allProducts.length){
         containerCartProducts.innerHTML=`
-        <p class"cart-empty" id="cart-empty">El carrito esta vacio</p>
+        <p class= "cart-empty" id="cart-empty">El carrito esta vacio</p>
         `
     }
 
