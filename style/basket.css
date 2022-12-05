@@ -1,3 +1,4 @@
+@import url("/styles.css");
 /*Versión móvil*/
 @media screen and (max-width: 576px) {
 
@@ -8,6 +9,9 @@
     .body-basket {
         
         height: 100%;
+    }
+    .header-top a{
+        color:var(--color-black);
     }
 
     .basket{
@@ -71,6 +75,10 @@
     .body-basket {
         
         height: 100%;
+    }
+    h2{
+        text-decoration: none;
+        color: var();
     }
 
     .basket{
