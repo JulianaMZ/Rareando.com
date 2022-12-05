@@ -1,4 +1,4 @@
-/*Versión móvil*/
+
 @media screen and (max-width: 576px) {
 
     html {
@@ -60,7 +60,14 @@
 
 
 
-/*Versión desk*/
+
+
+
+
+
+
+
+
 @media screen and (min-width: 576px) {
 
 

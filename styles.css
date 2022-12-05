@@ -1,7 +1,6 @@
 
 @import url("/style/header.css");
 @import url("/style/main.css");
-@import url("/style/footer.css");
 @import url("./style/basket.css");
 
 :root{
@@ -11,37 +10,9 @@
     --color-white:#fffff9;
     --color-black: black;
     --letter: 'Lato', sans-serif;
-
 }
 
 body {
    background-color: var(--color-white);
    ;
 }
-
-/*{
-    display: flex;
-}
-
-html{
-    height: 100%;
-    font-size: 62.5%;
-}
-body{
-    padding:0;
-    margin:0;
-    box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
-    height: 100%;
-}*/
-
-
-
-/* Para movil 
-@media screen and (max-width: 576px){
-    /* Lo que debe haber en toda la página, como el color
-    y la fuente, y el padding 0 margin 0 boxsizing 
-    a:link, a:visited, a:active {
-        text-decoration:none;  
-    }
-}*/
