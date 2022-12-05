@@ -16,16 +16,6 @@
         justify-content: space-between; 
     }
 
-    /*.container-icon {
-        width: 43px;
-        height: 43px;
-        background: var(--color-white); 
-        border-radius: 50%; 
-        position: absolute;
-        right: 28px;
-        top: 10px;
-    }*/
-
     .fa-shopping-cart {
         width: 1.37rem;
         right: 1.12rem;
@@ -160,7 +150,7 @@
 
 
 
-/*Versión desk*/
+
 @media screen and (min-width: 576px) {
 
     .header {
