@@ -7,7 +7,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
-    
+     <!-- PLUGIN TOASTR -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+     
     <title>Ecommerce</title>
 
 
@@ -48,8 +50,7 @@
           <a class="btn-go-to-cart" href="http://127.0.0.1:5501/basket.html" style="text-decoration:none">Tramitar pedido</a>
         </div>
       </div>
-        
-     
+      
   </header>
 
 
@@ -66,7 +67,7 @@
               <div class="card-body">
                 <h5 class="card-title">ZapaCuario</h5>
                 <p class="card-text">70</p>
-                <button type="button" class="btn btn-warning">¡Lo Quiero!</button>
+                <button id="btn-lq" type="button" class="btn btn-warning">¡Lo Quiero!</button>
               </div>
             </div>
           </div>
@@ -76,7 +77,7 @@
               <div class="card-body">
                 <h5 class="card-title">Arnes para Gallo</h5>
                 <p class="card-text">20</p>
-                <button type="button" class="btn btn-warning">¡Lo Quiero!</button>
+                <button id="btn-lq" type="button" class="btn btn-warning">¡Lo Quiero!</button>
               </div>
             </div>
           </div>
@@ -86,7 +87,7 @@
               <div class="card-body">
                 <h5 class="card-title">Secador manos libres</h5>
                 <p class="card-text">99</p>
-                <button type="button" class="btn btn-warning">¡Lo Quiero!</button>
+                <button id="btn-lq" type="button" class="btn btn-warning">¡Lo Quiero!</button>
               </div>
             </div>
           </div>
@@ -96,7 +97,7 @@
               <div class="card-body">
                 <h5 class="card-title">Pezchancla</h5>
                 <p class="card-text">30</p>
-                <button type="button" class="btn btn-warning">¡Lo Quiero!</button>
+                <button id="btn-lq" type="button" class="btn btn-warning">¡Lo Quiero!</button>
               </div>
             </div>
           </div>
@@ -106,7 +107,7 @@
               <div class="card-body">
                 <h5 class="card-title">Tocador para puerta</h5>
                 <p class="card-text">90</p>
-                <button type="button" class="btn btn-warning">¡Lo Quiero!</button>
+                <button id="btn-lq" type="button" class="btn btn-warning">¡Lo Quiero!</button>
               </div>
             </div>
           </div>
@@ -116,7 +117,7 @@
               <div class="card-body">
                 <h5 class="card-title">MiniGolf para Baño</h5>
                 <p class="card-text">55</p>
-                <button type="button" class="btn btn-warning">¡Lo Quiero!</button>
+                <button id="btn-lq" type="button" class="btn btn-warning">¡Lo Quiero!</button>
               </div>
             </div>
           </div>
@@ -124,7 +125,33 @@
     </div>
   </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+  crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="./app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    
+    
+    <script>
+      document.getElementById('btn-lq')
+      addEventListener("click", function(){
+        toastr.success("al carrito ❦", "Rareza añadida")
+
+            toastr.options = {
+                "closeButton": true,
+                "debug": false,
+                "newestOnTop": true,
+                "progressBar": false,
+                "positionClass": "toast-top-right",
+                "preventDuplicates": false,
+                "onclick": null,
+                "timeOut": "1500"
+            }
+    });
+
+    </script>
+
 </body>
 </html>
