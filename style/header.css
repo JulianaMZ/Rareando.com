@@ -169,8 +169,8 @@
 
     .count-products {
         position: absolute;
-        top: 85%;
-        margin-left: 2rem;
+        top: 45%;
+        margin-left: 1.8rem;
     
         background-color: var(--color-black);
         color: var(--color-white);
@@ -190,7 +190,7 @@
 
     .container-icon {
         position: relative;
-        margin: 1% 4%;
+        margin: 0.5% 4%;
     }
 
     #product-counter {
