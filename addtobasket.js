@@ -4,6 +4,8 @@ addProductButton.forEach(variable => {
     variable.addEventListener('click', addToCartClicked)
 });
 
+
+
 const shoppingBasketCardContainer = document.querySelector('.basket');
 let productsBasket = []
 
