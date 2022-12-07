@@ -4,10 +4,12 @@ addProductButton.forEach(variable => {
     variable.addEventListener('click', addToCartClicked)
 });
 
-const addProductTramitar = document.querySelector(".btn-go-to-cart")
-addProductTramitar.addEventListener('click', addToCartClicked)
 
-const shoppingBasketCardContainer = document.querySelector('.basket');
+const addProductTramPedido = document.querySelector(".btn-go-to-cart")
+
+
+
+const shoppingBasketCardContainer = document.querySelector(".basket");
 let productsBasket = []
 
 function addToCartClicked(event) {
@@ -21,8 +23,8 @@ function addToCartClicked(event) {
     productsBasket.push({cardTitle, cardPrice, cardImage});
     console.log(productsBasket);
     return productsBasket;
-   
 };
+
 
 console.log(productsBasket)
 
