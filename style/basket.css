@@ -45,27 +45,18 @@
         display: flex;
         justify-content: center;
     }
-    .btn-go-to-cart-bkt{
-      margin-bottom: 5%;
-      width: 50%;
-      border-radius:50px;
-      background-color: var(--color-yellow);
-      font-size: 1.5rem;
-      font-weight: 500;
-      border: none;
-    }
-
+    .btn-go{
+        display: flex;
+        text-align: center;
+        align-content: center;
+        justify-content: center;
+        width: 50%;
+        border: none;
+        background-color: var(--color-yellow);
+        margin-bottom: 2rem;
+}
    
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -80,6 +71,9 @@
     .body-basket {
         
         height: 100%;
+    }
+    .header-top a{
+        color:var(--color-black);    
     }
    
 
@@ -121,13 +115,14 @@
         justify-content: center;
     }
 
-    .btn-go-to-cart-bkt{
-      margin-bottom: 5%;
-      width: 50%;
-      border-radius:50px;
-      background-color: var(--color-yellow);
-      font-size: 1.5rem;
-      font-weight: 500;
-      border: none;
+    .btn-go{
+        display: flex;
+        text-align: center;
+        align-content: center;
+        justify-content: center;
+        width: 25%;
+        border: none;
+        background-color: var(--color-yellow);
+        margin-bottom: 2rem;
     }
 }
