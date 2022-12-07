@@ -112,5 +112,4 @@ const showHTML = () => {
     minusPlus.innerText = productMinusplus
     valorTotal.innerText = `${total}`;
     countProducts.innerText = totalOfProducts;
-
 };
