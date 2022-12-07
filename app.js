@@ -18,8 +18,7 @@ let valorTotal = document.querySelector('.total-pay');
 let countProducts = document.querySelector('#product-counter');
 
 
-let minusPlus = document.querySelector('.glyphicon')
-
+let minusPlus = document.querySelector('.info-cart-product')
 
 productsList.addEventListener('click', e => {
 
@@ -56,6 +55,30 @@ productsList.addEventListener('click', e => {
 
 
 });
+
+minusPlus.addEventListener('click', e => {
+    if (e.target.classList.contains('glyphicon-plus')) {
+        let product = e.target.parentElement;
+        product.quantity++
+        e.target.parentElement = allProducts = [...product];
+       
+    }
+
+
+    if (e.target.classList.contains('glyphicon-minus')) {
+        let product = e.target.parentElement;
+        product.quantity--
+        if (product.quantity === 0) {
+            delete e.target.parentElement
+        } 
+            e.target.parentElement = allProducts = [...product];
+        
+        showHTML();
+    }
+
+   
+})
+console.log(allProducts);
 
 rowProduct.addEventListener('click', (e) => {
     if(e.target.classList.contains('icon-close')){
