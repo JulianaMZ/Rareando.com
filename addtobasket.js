@@ -18,8 +18,8 @@ function addToCartClicked(event) {
     productsBasket.push({cardTitle, cardPrice, cardImage});
     console.log(productsBasket);
     return productsBasket;
-   
 };
+
 
 console.log(productsBasket)
 
