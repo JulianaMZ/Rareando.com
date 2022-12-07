@@ -5,8 +5,11 @@ addProductButton.forEach(variable => {
 });
 
 
+const addProductTramPedido = document.querySelector(".btn-go-to-cart")
 
-const shoppingBasketCardContainer = document.querySelector('.basket');
+
+
+const shoppingBasketCardContainer = document.querySelector(".basket");
 let productsBasket = []
 
 function addToCartClicked(event) {
