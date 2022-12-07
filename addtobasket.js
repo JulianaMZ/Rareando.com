@@ -45,3 +45,6 @@ function addCardToShoppingBasket(array) {
 }}
 
 addCardToShoppingBasket(productsBasket)
+
+console.log( addCardToShoppingBasket(productsBasket)
+)
