@@ -55,7 +55,7 @@
        top: 3.12rem;
        right: 0;
        background-color: var(--color-white);
-       width: 21.5rem; 
+       width: 1200%; 
        z-index: 1;
     }
 
