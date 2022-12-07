@@ -194,5 +194,4 @@ console.log(parseInt(total))
 
     valorTotal.innerText = `${total}`;
     countProducts.innerText = totalOfProducts;
-
 };
