@@ -136,7 +136,7 @@
     
     <script>
       document.getElementById('btn-lq')
-      addEventListener("click", function(){
+      .addEventListener("click", function(){
         toastr.success("al carrito ❦", "Rareza añadida")
 
             toastr.options = {
@@ -147,7 +147,8 @@
                 "positionClass": "toast-top-right",
                 "preventDuplicates": false,
                 "onclick": null,
-                "timeOut": "1500"
+                "showDuration": "500",
+                "timeOut": "500"
             }
     });
 
